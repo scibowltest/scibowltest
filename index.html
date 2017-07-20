@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1">
+  <title>Science Bowl Scorekeeper and Timer</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600" rel="stylesheet">
+</head>
+
+<body>
+  <div id="notDesktop">
+    <h1>We Are Sorry...</h1>
+    <p>but we currently do not support your current screen resolution.
+      <br> <br>This site has been designed for laptop/desktop use. We recommend using a laptop/desktop in full screen.</p>
+  </div>
+  <div id="content">
+    <div id="labels">
+      <div class="Team TeamA TeamLabel" id="TeamALabel">
+        <h1 id="TeamALabelText">Team A</h1>
+      </div>
+      <div class="Game" id="GameLabel">
+        <h1 id="GameLabelText">Game and Question Clock</h1>
+      </div>
+      <div class="Team TeamB TeamLabel" id="TeamBLabel">
+        <h1 id="TeamBLabelText">Team B</h1>
+      </div>
+    </div>
+    <div id="pointsGameClock">
+      <div class="Team TeamA TeamPoints" id="TeamAPoints">
+        <div class="TeamPointBox" id="TeamAPointBox">
+          <h1 id="TeamAPointText"></h1>
+        </div>
+      </div>
+      <div class="Game" id="GameClock">
+        <div class="ClockBox" id="GameClockBox">
+          <h1 id="GameClockText"></h1>
+        </div>
+        <div class="ClockButtons" id="GameClockButtons">
+          <button class="Button GameClockButton" id="StartPause" onclick="spGameClock()">Start/Pause</button>
+          <button class="Button GameClockButton" id="Reset" onclick="resetGameClock()">Reset</button>
+        </div>
+      </div>
+      <div class="Team TeamB TeamPoints" id="TeamBPoints">
+        <div class="TeamPointBox" id="TeamBPointBox">
+          <h1 id="TeamBPointText"></h1>
+        </div>
+      </div>
+    </div>
+    <div id="controlQuestionClock">
+      <div class="Team TeamA TeamControls" id="TeamAControls">
+        <div class="TeamControlButtonDiv" id="TeamAControlButton">
+          <button class="Button TeamControlButton P4Button" id="TeamAP4Button" onclick="p4A()">+4</button>
+          <button class="Button TeamControlButton P10Button" id="TeamAP10Button" onclick="p10A()">+10</button>
+          <button class="Button TeamControlButton M4Button" id="TeamAM4Button" onclick="m4A()">-4</button>
+          <button class="Button TeamControlButton RButton" id="TeamARButton" onclick="rA()">Reset</button>
+          <button class="Button TeamControlButton M10Button" id="TeamAM10Button" onclick="m10A()">-10</button>
+        </div>
+      </div>
+      <div class="Game" id="QuestionClock">
+        <div class="ClockBox" id="QuestionClockBox">
+          <h1 id="QuestionClockText"></h1>
+        </div>
+        <div class="ClockButtons" id="QuestionClockButtons">
+          <button class="Button QuestionClockButton" id="TUQuestionClock" onclick="tuQC()">Toss-Up</button>
+          <button class="Button QuestionClockButton" id="BonusQuestionClock" onclick="bQC()">Bonus</button>
+          <button class="Button QuestionClockButton" id="ResetQuestionClock" onclick="rQC()">Reset</button>
+        </div>
+      </div>
+      <div class="Team TeamB TeamControls" id="TeamBControls">
+        <div class="TeamControlButtonDiv" id="TeamBControlButton">
+          <button class="Button TeamControlButton P4Button" id="TeamBP4Button" onclick="p4B()">+4</button>
+          <button class="Button TeamControlButton P10Button" id="TeamBP10Button" onclick="p10B()">+10</button>
+          <button class="Button TeamControlButton M4Button" id="TeamBM4Button" onclick="m4B()">-4</button>
+          <button class="Button TeamControlButton RButton" id="TeamBRButton" onclick="rB()">Reset</button>
+          <button class="Button TeamControlButton M10Button" id="TeamBM10Button" onclick="m10B()">-10</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
