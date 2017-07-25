@@ -40,7 +40,7 @@
     border: 1px solid black;
     background-color: red;
     cursor: pointer;
-    font-size: 8px !important;
+    font-size: 7px !important;
   }
   .Button:hover {
     background-color: #de4f4f;
