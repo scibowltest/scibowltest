@@ -65,7 +65,7 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 14px;
+    font-size: 14px !important;
   }
   #pointsGameClock {
     position: absolute;
