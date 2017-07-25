@@ -9,7 +9,6 @@
     clear: none;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
-    font-size: 12px !important;
   }
   html, body {
     max-width: 100%;
@@ -41,6 +40,7 @@
     border: 1px solid black;
     background-color: red;
     cursor: pointer;
+    font-size: 8px !important;
   }
   .Button:hover {
     background-color: #de4f4f;
@@ -55,6 +55,7 @@
     width: 100%;
     border-bottom: 2px solid black;
     text-align: center;
+    font-size: 14px !important;
   }
   #labels h1 {
     font-weight: 600;
@@ -82,6 +83,7 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    font-size: 18px !important;
   }
   .TeamPointBox {
     position: relative;
@@ -140,6 +142,7 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    font-size: 18px !important;
   }
   .TeamControlButtonDiv {
     position: relative;
