@@ -121,7 +121,7 @@ function spGameClock() {
 function resetGameClock() {
   clearInterval(gameClockInterval);
   interval = null;
-  gameCounter = 480;
+  gameCounter = 360;
   $("#GameClockText").html("0:00");
   $("#GameClockBox").css("background-color", "#cccccc");
 }
